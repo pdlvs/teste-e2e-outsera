@@ -12,12 +12,11 @@ jobs:
         run: npm install
 
       - name: Clean old Mochawesome reports
-        run: rm -rf cypress/mochawesome-report 
+        run: rm -rf cypress/reports
 
       - name: Run Cypress Tests
         run: npm run cy:run
 
       - name: Generate Mochawesome Report
         run: npx mochawesome-merge cypress/reports/*.json > mochawesome.json && npx mochawesome-report-generator mochawesome.json
-   
       
