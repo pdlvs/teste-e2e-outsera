@@ -18,11 +18,6 @@ jobs:
         run: npm run cy:run
 
       - name: Generate Mochawesome Report
-        run: npx mochawesome-merge cypress/reports/*.json > mochawesome.json && npx mochawesome-report-generator mochawesome.json  
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          browser: chrome
+        run: npx mochawesome-merge cypress/reports/*.json > mochawesome.json && npx mochawesome-report-generator mochawesome.json
    
       
