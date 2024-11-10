@@ -1,0 +1,1 @@
+export const { usuario, senha } = Cypress.env('authOk');
