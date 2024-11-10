@@ -10,4 +10,4 @@ Teste realizados no e-commerce https://automationexercise.com/ contemplando os s
 - Retornar para página inicial
 - Logout
 
-Relatório de execução está sendo gerado na pasta cypress/reports sendo atualizado a cada alteração realizada e finalização de execução via Github Actions.
+Relatório de execução está sendo gerado na pasta cypress/reports/html sendo atualizado a cada alteração realizada.
