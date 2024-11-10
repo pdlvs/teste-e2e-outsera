@@ -12,7 +12,7 @@ jobs:
         run: npm install
 
       - name: Clean old Mochawesome reports
-        run: rm -rf cypress/reports 
+        run: rm -rf cypress/mochawesome-report 
 
       - name: Run Cypress Tests
         run: npm run cy:run
