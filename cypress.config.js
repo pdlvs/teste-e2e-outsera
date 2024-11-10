@@ -12,7 +12,6 @@ module.exports = defineConfig({
   },
   e2e: {
     screenshotOnRunFailure: false,
-    experimentalSessionAndOrigin: false,
     baseUrl: 'https://automationexercise.com',
     testIsolation: false, 
     specPattern: [

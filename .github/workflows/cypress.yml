@@ -19,8 +19,5 @@ jobs:
 
       - name: Generate Mochawesome Report
         run: npx mochawesome-merge cypress/reports/*.json > mochawesome.json && npx mochawesome-report-generator mochawesome.json
-
-      - name: Merge reports and generate html
-        run: npx marge cypress/reports/merged-report.json -f report -o cypress/reports
    
       
